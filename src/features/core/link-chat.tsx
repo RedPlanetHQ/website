@@ -1,5 +1,6 @@
 import { useToast } from '@redplanethq/ui';
 import Image from 'next/image';
+
 import { Container } from '../../components';
 import { Bento } from '../../components/bento';
 

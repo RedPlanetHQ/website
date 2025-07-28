@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { Container } from './utils';
@@ -49,87 +50,87 @@ export function Footer() {
                 <div className="flex flex-col gap-2 items-start">
                   <h1>CORE</h1>
                   {path === '/' && (
-                    <a href="/core" className="text-muted-foreground/80">
+                    <Link href="/core" className="text-muted-foreground/80">
                       Home
-                    </a>
+                    </Link>
                   )}
-                  <a
+                  <Link
                     href="/docs/getting-started"
                     className="text-muted-foreground/80"
                   >
                     Getting started
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/docs/components"
                     className="text-muted-foreground/80"
                   >
                     Components
-                  </a>
-                  <a href="/pricing" className="text-muted-foreground/80">
+                  </Link>
+                  <Link href="/pricing" className="text-muted-foreground/80">
                     Pricing
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="flex flex-col gap-2 items-start">
                   <h1>SOL</h1>
                   {path === '/core' && (
-                    <a href="/" className="text-muted-foreground/80">
+                    <Link href="/" className="text-muted-foreground/80">
                       Home
-                    </a>
+                    </Link>
                   )}
-                  <a
+                  <Link
                     href="/docs/getting-started"
                     className="text-muted-foreground/80"
                   >
                     Getting started
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/docs/components"
                     className="text-muted-foreground/80"
                   >
                     Components
-                  </a>
-                  <a href="/pricing" className="text-muted-foreground/80">
+                  </Link>
+                  <Link href="/pricing" className="text-muted-foreground/80">
                     Pricing
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="flex flex-col gap-2 items-start">
                   <h1>Company</h1>
-                  <a
+                  <Link
                     href="/docs/getting-started"
                     className="text-muted-foreground/80"
                   >
                     About
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/docs/components"
                     className="text-muted-foreground/80"
                   >
                     Privacy
-                  </a>
-                  <a href="/pricing" className="text-muted-foreground/80">
+                  </Link>
+                  <Link href="/pricing" className="text-muted-foreground/80">
                     Terms of Service
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="flex flex-col gap-2 items-start">
                   <h1>Resources</h1>
-                  <a
+                  <Link
                     href="/docs/getting-started"
                     className="text-muted-foreground/80"
                   >
                     Guides
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/docs/components"
                     className="text-muted-foreground/80"
                   >
                     Components
-                  </a>
-                  <a href="/pricing" className="text-muted-foreground/80">
+                  </Link>
+                  <Link href="/pricing" className="text-muted-foreground/80">
                     Pricing
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

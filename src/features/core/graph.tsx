@@ -1,5 +1,6 @@
 import { Button } from '@redplanethq/ui';
 import Image from 'next/image';
+
 import { Container } from '../../components';
 import { SwipeWrapper } from '../../components/swipe';
 

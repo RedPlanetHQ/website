@@ -9,8 +9,6 @@ import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import React from 'react';
 
-import * as dataFns from 'date-fns';
-
 import { ThemeProvider } from '../../common/theme-provider';
 
 export const MyApp = ({ Component, pageProps }: AppLayoutProps) => {

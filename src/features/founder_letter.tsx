@@ -46,6 +46,8 @@ export const FounderLetter = () => {
     }
     setIsComplete(true);
     setShowButton(false);
+
+    return () => {};
   }, [currentLetterIndex, fullContent.length, showButton, isComplete]);
 
   useEffect(() => {

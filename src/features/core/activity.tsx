@@ -1,5 +1,6 @@
 import { LayoutGrid, Link, Lock, Webhook } from 'lucide-react';
 import Image from 'next/image';
+
 import { Container } from '../../components';
 
 export const Activity = () => {

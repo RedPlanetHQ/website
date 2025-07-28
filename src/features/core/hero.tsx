@@ -1,8 +1,8 @@
 import { Button, Dialog, DialogContent } from '@redplanethq/ui';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Container } from '../../components';
 
+import { Container } from '../../components';
 import { DownloadButton } from '../../components/utils';
 
 const DemoVideo = () => {

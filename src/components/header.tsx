@@ -37,7 +37,7 @@ export const Header = () => {
           <nav className="hidden md:flex items-center gap-1 mr-2">
             {/* Show "Core" if on /, nothing if on /core */}
             {path === '/' ? (
-              <a
+              <Link
                 href="/core"
                 className={cn(
                   'text-foreground transition-colors',
@@ -45,9 +45,9 @@ export const Header = () => {
                 )}
               >
                 Core
-              </a>
+              </Link>
             ) : (
-              <a
+              <Link
                 href="/"
                 className={cn(
                   'text-foreground transition-colors',
@@ -55,7 +55,7 @@ export const Header = () => {
                 )}
               >
                 SOL
-              </a>
+              </Link>
             )}
             {/* Always show Docs */}
             <a

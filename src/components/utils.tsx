@@ -1,8 +1,5 @@
 import { Button, Checkbox, cn } from '@redplanethq/ui';
 import { RiGithubFill } from '@remixicon/react';
-import Heading from '@tiptap/extension-heading';
-import { mergeAttributes } from '@tiptap/react';
-import StarterKit from '@tiptap/starter-kit';
 import { useRouter } from 'next/router';
 import React from 'react';
 
@@ -75,72 +72,6 @@ export const TaskItem = ({
     </button>
   );
 };
-
-const heading = Heading.extend({
-  renderHTML({ node, HTMLAttributes }) {
-    const hasLevel = this.options.levels.includes(node.attrs.level);
-    const level: 1 | 2 | 3 = hasLevel
-      ? node.attrs.level
-      : this.options.levels[0];
-    const levelMap = { 1: 'text-2xl', 2: 'text-xl', 3: 'text-lg' };
-
-    return [
-      `h${level}`,
-      mergeAttributes(this.options.HTMLAttributes, HTMLAttributes, {
-        class: `heading-node h${node.attrs.level}-style ${levelMap[level]} mt-[1rem] font-medium`,
-      }),
-      0,
-    ];
-  },
-}).configure({ levels: [1, 2, 3] });
-
-const starterKit = StarterKit.configure({
-  bulletList: {
-    HTMLAttributes: {
-      class: cn('list-disc list-outside pl-4 leading-1 my-1 mb-1.5'),
-    },
-  },
-  orderedList: {
-    HTMLAttributes: {
-      class: cn('list-decimal list-outside pl-4 leading-1 my-1'),
-    },
-  },
-  listItem: {
-    HTMLAttributes: {
-      class: cn('mt-1.5'),
-    },
-  },
-  blockquote: {
-    HTMLAttributes: {
-      class: cn('border-l-4 border-gray-400 dark:border-gray-500'),
-    },
-  },
-  paragraph: {
-    HTMLAttributes: {
-      class: cn('leading-[24px] paragraph-node'),
-    },
-  },
-  codeBlock: false,
-  code: {
-    HTMLAttributes: {
-      class: cn(
-        'rounded-md bg-grayAlpha-100 text-[#BF4594] px-1.5 py-1 font-mono font-medium border-none',
-      ),
-      spellcheck: 'false',
-    },
-  },
-  horizontalRule: false,
-  dropcursor: {
-    color: '#DBEAFE',
-    width: 4,
-  },
-  heading: false,
-  gapcursor: false,
-});
-
-export const contextExtensions = [starterKit, heading];
-
-export const CONTENT = `<h2 class="heading-node h2-style text-xl mt-[1rem] font-medium">Work and projects</h2><ul class="list-disc list-outside pl-4 leading-1 my-1 mb-1.5"><li class="mt-1.5"><p class="leading-[24px] mt-[1rem] paragraph-node">Building sigma, a todo app with personal assistant</p></li><li class="mt-1.5"><p class="leading-[24px] mt-[1rem] paragraph-node">Into coding in typescript</p><p class="leading-[24px] mt-[1rem] paragraph-node"></p></li></ul><h1 class="heading-node h1-style text-2xl mt-[1rem] font-medium">Automation</h1><p class="leading-[24px] mt-[1rem] paragraph-node">When an email with Meeting summary is received create actionable items for me out of that summary</p><p class="leading-[24px] mt-[1rem] paragraph-node">When I get an email from my CA (Akash) create actionable items and add them to \`Tax Documentation\`</p>`;
 
 export const DownloadButton = ({
   size = 'lg',
