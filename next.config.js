@@ -1,6 +1,4 @@
-const { withNextVideo } = require('next-video/process');
-
-module.exports = withNextVideo({
+module.exports = {
   reactStrictMode: false,
   experimental: {
     scrollRestoration: true,
@@ -14,4 +12,4 @@ module.exports = withNextVideo({
   images: {
     unoptimized: true,
   },
-});
+};
