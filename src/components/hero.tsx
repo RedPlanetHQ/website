@@ -23,15 +23,6 @@ export const Hero = () => {
           >
             Join the wailist <ArrowRight size={14} className="ml-2" />
           </Button>
-
-          <Button
-            className="p-4 rounded-lg"
-            size="2xl"
-            variant="outline"
-            onClick={handleDownload}
-          >
-            Get a demo
-          </Button>
         </div>
         <div className="flex flex-col gap-1 w-full  mt-10 lg:mt-20 mb-5">
           <Image

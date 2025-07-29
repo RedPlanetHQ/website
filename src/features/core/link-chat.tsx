@@ -16,7 +16,7 @@ export const LinkChat = () => {
   };
 
   return (
-    <Container className="p-6 mt-[5rem] lg:mt-[8rem] border-b border-border pb-0">
+    <Container className="p-6 mt-[5rem] border-b border-border pb-0">
       <Bento
         left={
           <>
