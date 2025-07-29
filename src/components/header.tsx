@@ -19,18 +19,17 @@ export const Header = () => {
     >
       <div className="mx-auto max-w-5xl w-full flex gap-2 justify-between items-center bg-grayAlpha-100 p-1 px-3 rounded-none lg:rounded-lg backdrop-blur-lg">
         {/* Logo */}
-        <Link href="/">
-          <div className="flex items-center gap-2 shrink-0">
-            {path === '/core' ? (
-              <Image src="/core/logo.png" alt="logo" width={48} height={48} />
-            ) : (
-              <Image src="/logo_black.svg" alt="logo" width={48} height={48} />
-            )}
-            <div className="font-mono mr-2 text-lg font-medium">
-              {path === '/core' ? 'CORE' : 'SOL'}{' '}
-            </div>
+
+        <div className="flex items-center gap-2 shrink-0">
+          {path === '/core' ? (
+            <Image src="/core/logo.png" alt="logo" width={48} height={48} />
+          ) : (
+            <Image src="/logo_black.svg" alt="logo" width={48} height={48} />
+          )}
+          <div className="font-mono mr-2 text-lg font-medium">
+            {path === '/core' ? 'CORE' : 'SOL'}{' '}
           </div>
-        </Link>
+        </div>
 
         {/* Right Side: Links and Download */}
         <div className="flex items-center gap-3">
@@ -70,7 +69,7 @@ export const Header = () => {
               Docs
             </a>
 
-            <a
+            {/* <a
               href="/changelog"
               className={cn(
                 'text-foreground transition-colors',
@@ -78,7 +77,7 @@ export const Header = () => {
               )}
             >
               Changelog
-            </a>
+            </a> */}
           </nav>
 
           <Button
@@ -86,7 +85,7 @@ export const Header = () => {
             variant="secondary"
             className="gap-2 items-center w-fit"
             onClick={() =>
-              window.open('https://github.com/RedPlanetHQ/sol', '_blank')
+              window.open('https://github.com/RedPlanetHQ/core', '_blank')
             }
           >
             <RiGithubFill size={20} />

@@ -66,9 +66,9 @@ export const FounderLetter = () => {
   };
 
   return (
-    <section className="">
+    <section className="font-mono mb-[8rem]">
       <div className="w-full p-6 px-0 border-[#3131314D]">
-        <div className="founder-letter">
+        <div className="founder-letter p-4 lg:p-0">
           <EditorContent editor={editor} />
         </div>
 

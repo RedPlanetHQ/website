@@ -53,9 +53,9 @@ export const Activity = () => {
             gap-6
             border-border
             border-t
+            mb-[5rem] lg:mb-[8rem]
             pt-5
             w-full
-            mt-[5rem] lg:mt-[8rem]
             max-[991px]:grid-cols-2
             max-[767px]:grid-cols-1
           "

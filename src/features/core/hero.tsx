@@ -65,7 +65,7 @@ const DemoVideo = () => {
 export const Hero = () => {
   return (
     <section className="w-full">
-      <Container className="flex flex-col items-center text-center w-full !py-[12rem] h-full relative justify-center mx-auto max-w-3xl">
+      <Container className="flex flex-col items-center text-center w-full !py-[6rem] lg:!py-[12rem] h-full relative justify-center mx-auto max-w-3xl">
         <div className="relative flex flex-wrap text-center justify-center text-[30px] lg:text-[52px] mt-5 lg:mt-10 font-bold">
           Your digital brain for AI era
         </div>
