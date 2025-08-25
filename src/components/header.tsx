@@ -69,15 +69,15 @@ export const Header = () => {
               Docs
             </a>
 
-            {/* <a
-              href="/changelog"
+            <a
+              href="https://docs.heysol.ai/opensource/changelog"
               className={cn(
                 'text-foreground transition-colors',
                 buttonVariants({ variant: 'ghost', size: 'lg' }),
               )}
             >
               Changelog
-            </a> */}
+            </a>
           </nav>
 
           <Button

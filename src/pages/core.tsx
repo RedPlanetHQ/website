@@ -20,7 +20,7 @@ const Index = () => {
               alt="logo"
               width={48}
               height={48}
-              className="object-cover md:object-fill !w-full !h-full opacity-60"
+              className="object-cover !w-full !h-full"
             />
           </div>
           <Hero />

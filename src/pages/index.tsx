@@ -2,7 +2,7 @@
 import { ScrollArea } from '@redplanethq/ui';
 import Image from 'next/image';
 
-import { Container, Footer, Header, Hero } from '../components';
+import { Container, DownloadButton, Footer, Header, Hero } from '../components';
 import { FounderLetter } from '../features/founder_letter';
 
 const Index = () => {
@@ -23,10 +23,15 @@ const Index = () => {
           <Hero />
         </div>
 
-        <Container className="pt-[3rem]">
+        <Container className="p-4 md:p-0">
           <FounderLetter />
         </Container>
 
+        <Container className="flex justify-center mb-[3rem]">
+          <div className="flex justify-center">
+            <DownloadButton size="2xl" />
+          </div>
+        </Container>
         <Footer />
       </ScrollArea>
     </div>

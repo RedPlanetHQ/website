@@ -35,12 +35,16 @@ export function Footer() {
                   {path === '/core' ? 'CORE' : 'SOL'}
                 </div>
               </div>
+              <div className="flex gap-2 items-center">
+                Backed by
+                <Image src="/yc.svg" alt="logo" width={20} height={20} />
+              </div>
             </div>
             <div className="flex-1">
               <div
                 className="
             grid
-            grid-cols-3
+            grid-cols-4
             gap-8
             w-full
             justify-center
@@ -63,6 +67,15 @@ export function Footer() {
                   >
                     Docs
                   </a>
+
+                  <a
+                    href="https://blog.heysol.ai"
+                    className="text-muted-foreground/80"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Blog
+                  </a>
                   <a
                     href="https://docs.heysol.ai/concepts "
                     className="text-muted-foreground/80"
@@ -70,6 +83,30 @@ export function Footer() {
                     rel="noopener noreferrer"
                   >
                     Basic Concepts
+                  </a>
+                  {/* <Link href="/pricing" className="text-muted-foreground/80">
+                    Pricing
+                  </Link> */}
+                </div>
+
+                <div className="flex flex-col gap-2 items-start">
+                  <h1>Resources</h1>
+
+                  <a
+                    href="https://blog.heysol.ai"
+                    className="text-muted-foreground/80"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Blog
+                  </a>
+                  <a
+                    href="https://docs.heysol.ai/opensource/changelog "
+                    className="text-muted-foreground/80"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Changelog
                   </a>
                   {/* <Link href="/pricing" className="text-muted-foreground/80">
                     Pricing
